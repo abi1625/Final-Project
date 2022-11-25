@@ -1,7 +1,17 @@
-const RecipeDetail = () => {
-    return (
-    <h1>RecipeDetail</h1>
-    );
-}
+import { useParams } from "react-router-dom";
+// import styled from "styled-components";
 
+const RecipeDetail = () => {
+    const {recepieId} = useParams();
+        return ( 
+            <StyledItems>
+                <div className="recepies">
+                    <div className="recepie-details">
+                        {/* image ingredients descriptions comments  */}
+                    </div> 
+                </div>
+            </StyledItems>
+            )
+    };
+    
 export default RecipeDetail;
