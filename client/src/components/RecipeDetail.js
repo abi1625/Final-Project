@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-// import styled from "styled-components";
+import styled from "styled-components";
 
 const RecipeDetail = () => {
     const {recepieId} = useParams();
@@ -14,4 +14,7 @@ const RecipeDetail = () => {
             )
     };
     
+    const StyledItems = styled.div`
+`;
+
 export default RecipeDetail;

@@ -1,6 +1,6 @@
-import styled from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import styled from "styled-components";
 import Header from "./Header";
 import Home from "./Home";
 import About from "./About";
@@ -32,7 +32,7 @@ const App = () => {
 };
 
 const Main = styled.div`
-  background: grey;
+  /* background: grey; */
   display: flex;
   flex-direction: column;
   height: calc(100vh - 150px);
