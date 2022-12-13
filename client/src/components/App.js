@@ -33,9 +33,9 @@ const App = () => {
 
 const Main = styled.div`
   /* background: grey; */
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 150px);
 `;
 
 export default App;

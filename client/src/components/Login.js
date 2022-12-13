@@ -1,8 +1,14 @@
-const Login = () => {
-    return (
+import {useAuth0} from '@auth0/auth0-react';
 
-        <h1>Login</h1>
-        
+const Login = () => {
+    const {loginWithRedirect, isAuthenticated }  = useAuth0();
+
+    return (
+        !isAuthenticated && (
+            <button onClick={() => loginWithRedirect()}>
+                Login
+            </button>
+        )
     );
 }
 

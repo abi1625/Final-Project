@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Popular from "./Popular";
 
 const Home = () => {
     return (
@@ -9,6 +10,7 @@ const Home = () => {
                 <p>Browse recepie:</p>
                 <div className="image">
                     {/* Image and name import recepieDetail{recepies={recepies}}*/}
+                    <Popular />
                 </div>
             </div>
         </div>
